@@ -1,0 +1,28 @@
+{
+  "name": "eye-break-desktop",
+  "version": "1.0.0",
+  "description": "20-20-20 eye break timer desktop app (Electron, tray, beeps, popup).",
+  "main": "main.js",
+  "author": "You",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "org.yourname.eyebreak",
+    "productName": "Eye Break",
+    "files": [
+      "!**/.github/**"
+    ],
+    "directories": { "buildResources": "assets" },
+    "win": {
+      "target": [{ "target": "portable", "arch": [ "x64" ] }],
+      "artifactName": "EyeBreak-${version}-portable.exe"
+    }
+  }
+}
