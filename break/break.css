@@ -1,0 +1,6 @@
+.wrap{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b1220;color:#e6fff8}
+.h{font-size:14px;letter-spacing:.12em;text-transform:uppercase;opacity:.8}
+.t{font-size:72px;font-weight:800;margin:8px 0}
+.sub{font-size:12px;opacity:.75}
+.row{margin-top:10px}
+.btn{padding:6px 10px;border-radius:8px;background:#10b981;border:none;color:#001b14;font-weight:700;cursor:pointer}
