@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Eye Break Settings</title>
+<link rel="stylesheet" href="settings.css"></head>
+<body>
+  <div class="wrap">
+    <h1>Eye Break — Settings</h1>
+    <div class="grid">
+      <label>Work (minutes)<input id="workMin" type="number" min="1" value="20"></label>
+      <label>Break (seconds)<input id="breakSec" type="number" min="1" value="20"></label>
+      <label>Volume (0–1)<input id="volume" type="number" step="0.05" min="0" max="1" value="0.9"></label>
+      <label>Break beeps<input id="breakBeeps" type="number" min="1" value="10"></label>
+      <label>Beep gap (ms)<input id="beepGapMs" type="number" min="10" step="10" value="160"></label>
+      <label>Beep duration (ms)<input id="beepDurMs" type="number" min="50" step="10" value="320"></label>
+      <label>Beep freq (Hz)<input id="beepFreq" type="number" min="200" step="10" value="1500"></label>
+      <label>Waveform<select id="waveform"><option>square</option><option>sawtooth</option><option>triangle</option><option>sine</option></select></label>
+      <label class="row"><input id="loopBreakBeep" type="checkbox" checked> Loop beeps during break</label>
+    </div>
+    <div class="row"><button id="save">Save</button><button id="start">Start</button><button id="pause">Pause</button><span class="muted" id="status">Idle</span></div>
+  </div>
+  <script src="settings.js"></script>
+</body></html>
